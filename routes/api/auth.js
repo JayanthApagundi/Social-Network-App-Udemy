@@ -11,7 +11,7 @@ const bcrypt = require('bcryptjs');
 // @route GET api/auth
 // @desc Test Route
 // @access Public
-//router.get('/', auth, (req, res) => res.send('Auth Route'));
+//router.get('/',(req, res) => res.send('Auth Route'));
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');
@@ -52,7 +52,7 @@ router.post(
 
       const match = await bcrypt.compare(password, user.password);
 
-      if(!match){
+      if (!match) {
         return res
           .status(400)
           .json({ errors: [{ msg: 'Invalid Credentials' }] });
