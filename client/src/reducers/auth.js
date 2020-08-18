@@ -46,8 +46,7 @@ export default function (state = initialState, action) {
         loading: false,
         user: payload,
       };
-
     default:
-      return false;
+      return state;
   }
 }
