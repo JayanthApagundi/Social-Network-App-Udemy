@@ -97,7 +97,7 @@ const AddEducation = ({ addEducation, history }) => {
                 toggleDisable(!toDateDisable);
               }}
             />{' '}
-            Current Job
+            Current
           </p>
         </div>
         <div className='form-group'>
@@ -121,9 +121,9 @@ const AddEducation = ({ addEducation, history }) => {
           ></textarea>
         </div>
         <input type='submit' className='btn btn-primary my-1' />
-        <a className='btn btn-light my-1' href='dashboard.html'>
+        <Link className='btn btn-light my-1' to='/dashboard'>
           Go Back
-        </a>
+        </Link>
       </form>
     </Fragment>
   );
@@ -133,4 +133,4 @@ AddEducation.propTypes = {
   addEducation: PropTypes.func.isRequired,
 };
 
-export default connect(null, { addEducation })(AddEducation);
+export default connect(null, { addEducation })(withRouter(AddEducation));
