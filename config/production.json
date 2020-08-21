@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb+srv://Jayanth_Apagundi:jayyu@1999@social-network-app.mnqaj.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "myToken",
+  "githubToken": "37db84908a853914c6bbc9163ee859f4774c3f04"
+}
