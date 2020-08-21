@@ -10,7 +10,7 @@ const User = require('../../models/User');
 const Post = require('../../models/Post');
 const { check, validationResult } = require('express-validator');
 const { compare } = require('bcryptjs');
-const nodemon = require('nodemon');
+//const nodemon = require('nodemon');
 
 // @route GET api/profile
 // @desc Test Route
